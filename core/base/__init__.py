@@ -1,51 +1,24 @@
 """
-Base 基礎類別模組
+基礎類模組
+提供約束條件、狀態表示等基礎類
 """
 
-from .vehicle_base import (
-    VehicleModel,
-    VehicleFactory,
-    VehicleType,
-    VehicleState,
-    VehicleConstraints,
-    VehicleConfig,
-    DEFAULT_MULTIROTOR_CONFIG,
-    DEFAULT_FIXED_WING_CONFIG
-)
-
-from .planner_base import (
-    BasePlanner,
-    GlobalPlanner,
-    LocalPlanner,
-    HybridPlanner,
-    PlannerFactory,
-    PlannerType,
-    PlannerResult,
-    PlannerStatus,
-    GlobalPlannerConfig,
-    LocalPlannerConfig
+from .constraint_base import (
+    State,
+    Constraint,
+    VelocityConstraint,
+    AccelerationConstraint,
+    AltitudeConstraint,
+    GeofenceConstraint,
+    CompositeConstraint
 )
 
 __all__ = [
-    # Vehicle
-    'VehicleModel',
-    'VehicleFactory',
-    'VehicleType',
-    'VehicleState',
-    'VehicleConstraints',
-    'VehicleConfig',
-    'DEFAULT_MULTIROTOR_CONFIG',
-    'DEFAULT_FIXED_WING_CONFIG',
-    
-    # Planner
-    'BasePlanner',
-    'GlobalPlanner',
-    'LocalPlanner',
-    'HybridPlanner',
-    'PlannerFactory',
-    'PlannerType',
-    'PlannerResult',
-    'PlannerStatus',
-    'GlobalPlannerConfig',
-    'LocalPlannerConfig'
+    'State',
+    'Constraint',
+    'VelocityConstraint',
+    'AccelerationConstraint',
+    'AltitudeConstraint',
+    'GeofenceConstraint',
+    'CompositeConstraint'
 ]
