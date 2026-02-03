@@ -1,18 +1,13 @@
 """
-UI 使用者介面模組
-PyQt6 框架
+UI 層套件
+PyQt6 圖形界面實現
 """
 
-from .main_window import (
-    MainWindow,
-    PlanningWorker,
-    ParameterPanel,
-    UIColors
-)
+__version__ = "2.0.0"
+
+# 匯出主要組件
+from ui.main_window import MainWindow
 
 __all__ = [
     'MainWindow',
-    'PlanningWorker',
-    'ParameterPanel',
-    'UIColors'
 ]
